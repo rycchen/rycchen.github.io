@@ -1,62 +1,323 @@
 <html>
 <head>
-    <title>Ryan C. Chen</title>
-    <style>
-        body {
-            display: flex;
-	    align-items: flex-start; /* Align items to the top */
-            min-height: 100vh; /* Ensure the body fills the viewport */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-	    /* font-family: Arial, sans-serif; */		
-        }
-
-        .container {
-            display: flex; /* Use flexbox for layout */
-            max-width: 1200px; /* Set a maximum width for the container */
-	    width: 100%; /* Ensure the layout fills the available width */
-        }
-
-        .column {
-            flex: 1; /* Make the columns flexible to occupy available space */
-            padding: 20px; /* Add some padding to the columns */
-        }
-
-        .left-column {
-            text-align: right; /* Align content in the left column to the right */
-        }
-
-        .right-column {
-            text-align: left; /* Align content in the right column to the left */
-        }
-
-        img {
-            max-width: 200px; /* Ensure the image doesn't exceed the width of its container */
-            height: auto; /* Maintain aspect ratio */
-	    margin-right: 20px; /* Add some spacing between the image and text */
-        }
-    </style>
-    <style type="text/css">
-  	span.yalpsid { display:none; }
-    </style>
+  <title>Ryan C. Chen</title>
+  <link rel="stylesheet" href="css/column_styles.css">
+  <style></style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      }
+    });
+  </script>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">  
+  <script>
+  $(function() {
+    $( "#button" ).click(function() {
+      $( "#item" ).toggle();
+    });
+  });
+  </script>
+  <script src="js/toggleDisplay.js"></script>
+  <script src="js/includeHTML.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="column left-column">
-            <img src="ryan_chen_profile.jpg">
-        </div>
-        <div class="column right-column">
-            <h1>Ryan C. Chen</h1>
-            <p>I am a PhD student in the math department at 
-               <a href="https://math.mit.edu/">MIT</a>. My advisor is 
-               <a href="https://math.mit.edu/~wz2113/">Wei Zhang</a>.
-               <br>I am interested in number theory and arithmetic geometry.
-            </p>
-              <div><b>&#69<span class="yalpsid">mi</span><span>mai</span>&#108:</b> 
-	      <span>rc</span>chen<span class="yalpsid">hr</span><span class="yalpsid">vap</span><span>&#x40</span><span>mi</span><span>t.e</span><span>du</span></div>
-	    <br>
-	    <p> <a href="http://accessibility.mit.edu">Accessibility</a>
-	    </p>
-        </div>
+  <div class="container">
+    <div class="column right-column">
+      <img src="ryan_chen_profile.jpg" alt="ryan_chen">
     </div>
+    <div class="column left-column">
+      <h1>Ryan C. Chen</h1>
+      <p>I am a PhD student in the math department at 
+        <a href="https://math.mit.edu/">MIT</a>. My advisor is 
+        <a href="https://math.mit.edu/~wz2113/">Wei Zhang</a>.
+        <br>I am interested in number theory and arithmetic geometry. I have been working on topics in Kudla's program.
+      </p>
+      <div>
+        <b>&#69<span class="yalpsid">mi</span><span>mai</span>&#108:</b> 
+        <span>rc</span>chen<span class="yalpsid">hr</span><span class="yalpsid">vap</span><span>&#x40</span><span>mi</span><span>t.e</span><span>du</span>
+      </div>
+      <p>
+        <b>Curriculum vitae:</b>
+        [<a href="rcchen_CV.pdf">CV</a>]
+      </p>
+      <br>
+      <h2>Research</h2>
+<!-- -------------------------------------- -->
+      <p>
+        <small>
+          Listed in reverse order of first arXiv appearance (with arXiv year also indicated).
+          <a href="https://arxiv.org/a/chen_r_2">arXiv ID</a>
+          <br>
+          Comments welcome!
+        </small>
+      </p>
+<!-- -------------------------------------- -->  
+      <p class="hanging-indent">
+        <a href="papers/corank1_ASW.pdf"><strong>Co-rank 1 Arithmetic Siegel&ndash;Weil</strong></a>
+        <br>
+        <span class="depth-2">
+          Preliminary version (2024), pp. 1&ndash;223.
+        </span>
+        <br>
+        <span class="depth-2">
+          [<a href="javascript:;" onclick="toggleDisplay('corank1_ASW');">abstract</a>]
+        </span>
+      </p>
+
+      <div id="corank1_ASW" style="display: none">
+      <p class="hanging-indent">
+      <span class="depth-2-indent">
+        We prove the arithmetic Siegel&ndash;Weil formula in co-rank 1, for Kudla&ndash;Rapoport
+        special cycles on exotic smooth integral models of unitary Shimura varieties
+        of arbitrarily large even arithmetic dimension. We also propose a construction
+        for arithmetic special cycle classes associated to possibly singular matrices
+        of arbitrary co-rank.
+        Our arithmetic Siegel&ndash;Weil formula implies that degrees of Kudla&ndash;Rapoport arithmetic
+        special $1$-cycles are encoded in the first derivatives of unitary
+        Eisenstein series Fourier coefficients.
+      </span>
+      <span class="depth-2-indent">
+        The key input is a new limiting method at all places. On the analytic side,
+        the limit relates local Whittaker functions on different groups.
+        On the geometric side at nonsplit non-Archimedean places, the
+        limit relates degrees of $0$-cycles on Rapoport&ndash;Zink spaces
+        and local contributions to heights of $1$-cycles in mixed characteristic. 
+      </span>
+      </p>
+      </div>
+<!-- -------------------------------------- -->    
+      <p class="hanging-indent">
+        <a href="papers/CKL19.pdf"><strong>A refined conjecture for the variance of Gaussian primes across sectors</strong></a>
+	<br>
+        <span class="depth-1">
+          with <a href="https://yujinhkim.github.io/" class="no-decoration">Yujin H. Kim</a>,
+          <a href="https://web.stanford.edu/~jdl18/" class="no-decoration">Jared D. Lichtman</a>,
+          <a href="https://sites.williams.edu/sjm1/" class="no-decoration">Steven J. Miller</a>,
+          Alina Shubina,
+          Shannon Sweitzer,
+          <a href="https://sites.google.com/site/ezrawaxman/home" class="no-decoration">Ezra Waxman</a>,
+          Eric Winsor,
+          and <a href="https://www.linkedin.com/in/jianing-yang-65186378" class="no-decoration">Jianing Yang</a>.
+        </span>
+        <br>
+        <span class="depth-2">
+          <em>Experimental Mathematics</em>, vol. 32 no. 1 (2023), pp. 33&ndash;53.
+        </span>
+        <br>
+	<span class="depth-2">
+          [<a href="javascript:;" onclick="toggleDisplay('CKL19');">abstract</a>]
+          [<a href="https://arxiv.org/abs/1901.07386">arXiv</a> (2019)]
+          [<a href="https://doi.org/10.1080/10586458.2020.1753598">journal</a>]          
+        </span>
+      </p>
+
+      <div id="CKL19" style="display: none">
+      <p class="hanging-indent">
+      <span class="depth-2-indent">
+        We derive a refined conjecture for the variance of Gaussian primes across sectors,
+        with a power saving error term, by applying the $L$-functions Ratios Conjecture.
+        We observe a bifurcation point in the main term,
+        consistent with the Random Matrix Theory (RMT) heuristic previously proposed
+        by Rudnick and Waxman. Our model also identifies a second bifurcation point,
+        undetected by the RMT model, that emerges upon taking into account lower order terms.
+        For sufficiently small sectors, we moreover prove an unconditional result that
+        is consistent with our conjecture down to lower order terms.       
+      </span>
+      </p>
+      </div>
+<!-- -------------------------------------- -->   
+      <p class="hanging-indent">
+        <a href="papers/CMT18.pdf"><strong>$p$-adic Properties of Hauptmoduln with Applications to Moonshine</strong></a>
+	<br>
+        <span class="depth-1">
+          with <a href="https://people.math.harvard.edu/~smarks/" class="no-decoration">Samuel Marks</a>
+          and <a href="https://stanford.edu/~mttyler/" class="no-decoration">Matt Tyler</a>.
+        </span>
+        <br>
+        <span class="depth-2">
+          <em>Symmetry, Integrability, and Geometry: Methods and Applications (SIGMA)</em>, vol. 15 (2019), pp. 1&ndash;35.
+        </span>
+        <br>
+	<span class="depth-2">
+          [<a href="javascript:;" onclick="toggleDisplay('CMT18');">abstract</a>]
+          [<a href="https://arxiv.org/abs/1809.02913">arXiv</a> (2018)]
+          [<a href="https://doi.org/10.3842/SIGMA.2019.033">journal</a>]          
+        </span>
+      </p>
+
+      <div id="CMT18" style="display: none">
+      <p class="hanging-indent">
+      <span class="depth-2-indent">
+        The theory of monstrous moonshine asserts that the coefficients of Hauptmoduln,
+        including the $j$-function, coincide precisely with the graded characters of the monster module,
+        an infinite-dimensional graded representation of the monster group.
+        On the other hand, Lehner and Atkin proved that the coefficients of the $j$-function
+        satisfy congruences modulo $p^n$ for $p\in\{2,3,5,7,11\}$,
+        which led to the theory of $p$-adic modular forms. 
+        We combine these two aspects of the $j$-function
+        to give a general theory of congruences modulo powers of primes
+        satisfied by the Hauptmoduln appearing in monstrous moonshine.
+        We prove that many of these Hauptmoduln satisfy such congruences,
+        and we exhibit a relationship between these congruences and the
+        group structure of the monster. We also find a distinguished class
+        of subgroups of the monster with graded characters satisfying such congruences.       
+      </span>
+      </p>
+      </div>
+<!-- -------------------------------------- -->
+      <p class="hanging-indent">
+        <a href="papers/ACF18.pdf"><strong>Lower-Order Biases in the Second Moment of Dirichlet Coefficients in Families of $L$-functions</strong></a>
+	<br>
+        <span class="depth-1">
+          with <a href="https://gse.rutgers.edu/student/megumi-asada/" class="no-decoration">Megumi Asada</a>, 
+          <a href="https://www.linkedin.com/in/eva-fourakis-9863a6209" class="no-decoration">Eva Fourakis</a>,
+          <a href="https://yujinhkim.github.io/" class="no-decoration">Yujin Hong Kim</a>,
+          <a href="https://andrewokwon.github.io/" class="no-decoration">Andrew Kwon</a>,
+          <a href="https://web.stanford.edu/~jdl18/" class="no-decoration">Jared Duker Lichtman</a>, 
+          <a href="https://www.linkedin.com/in/blake-mackall-31391b139" class="no-decoration">Blake Mackall</a>,
+          <a href="https://sites.williams.edu/sjm1/" class="no-decoration">Steven J. Miller</a>,
+          Eric Winsor,
+          <a href="https://karlwinsor.github.io/" class="no-decoration">Karl Winsor</a>,
+          <a href="https://www.linkedin.com/in/jianing-yang-65186378" class="no-decoration">Jianing Yang</a>,
+          and <a href="https://yang-kev.github.io/" class="no-decoration">Kevin Yang</a>.
+        </span>
+        <br>
+        <span class="depth-2">
+          <em>Experimental Mathematics</em>, vol. 32 no. 3 (2023), pp. 431&ndash;456.
+        </span>
+        <br>
+	<span class="depth-2">
+          [<a href="javascript:;" onclick="toggleDisplay('ACF18');">abstract</a>]
+          [<a href="https://arxiv.org/abs/1808.06056">arXiv</a> (2018)]
+          [<a href="https://doi.org/10.1080/10586458.2021.1980453">journal</a>]          
+        </span>
+      </p>
+
+      <div id="ACF18" style="display: none">
+      <p class="hanging-indent">
+      <span class="depth-2-indent">
+        Let $\mathcal E: y^2 = x^3 + A(T)x + B(T)$ be a nontrivial one-parameter family of elliptic
+        curves over $\mathbb{Q}(T)$, with $A(T), B(T) \in \mathbb Z(T)$, and consider the $k$<sup>th</sup>
+        moments $A_{k,\mathcal{E}}(p) := \sum_{t (p)} a_{\mathcal{E}_t}(p)^k$ of the Dirichlet coefficients
+        $a_{\mathcal{E}_t}(p) := p + 1 - |\mathcal{E}_t (\mathbb{F}_p)|$. Rosen and Silverman proved a conjecture
+        of Nagao relating the first moment $A_{1,\mathcal{E}}(p)$ to the rank of the family over $\mathbb{Q}(T)$,
+        and Michel proved that if $j(T)$ is not constant then the second moment is equal to $A_{2,\mathcal{E}}(p) = p^2 + O(p^{3/2})$.
+        Cohomological arguments show that the lower order terms are of sizes $p^{3/2}, p, p^{1/2},$ and $1$. 
+        In every case we are able to analyze, the largest lower order term in the second moment expansion that 
+        does not average to zero is on average negative. We prove this Bias Conjecture for several large
+        classes of families, including families with rank, complex multiplication, and constant $j(T)$-invariant.
+        We also study the analogous Bias Conjecture for families of Dirichlet characters, 
+        holomorphic forms on GL$(2)/\mathbb{Q}$, and their symmetric powers and Rankin-Selberg convolutions. 
+        We identify all lower order terms in large classes of families, shedding light on the arithmetic objects
+        controlling these terms. The negative bias in these lower order terms has implications toward
+        the excess rank conjecture and the behavior of zeros near the central point in families of $L$-functions.       
+      </span>
+      </p>
+      </div>
+<!-- -------------------------------------- -->
+      <p class="hanging-indent">
+        <a href="papers/CKL18.pdf"><strong>Spectral statistics of non-Hermitian random matrix ensembles</strong></a>
+	<br>
+        <span class="depth-1">
+          with <a href="https://yujinhkim.github.io/" class="no-decoration">Yujin H. Kim</a>, 
+          <a href="https://web.stanford.edu/~jdl18/" class="no-decoration">Jared D. Lichtman</a>, 
+          <a href="https://sites.williams.edu/sjm1/" class="no-decoration">Steven J. Miller</a>, 
+          Shannon Sweitzer, 
+          and Eric Winsor.
+        </span>
+        <br>
+        <span class="depth-2">
+          <em>Random Matrices: Theory and Applications</em>, vol. 8 no. 2 (2019), pp. 1&ndash;40.
+        </span>
+        <br>
+	<span class="depth-2">
+          [<a href="javascript:;" onclick="toggleDisplay('CKL18');">abstract</a>]
+          [<a href="https://arxiv.org/abs/1803.08127">arXiv</a> (2018)]
+          [<a href="https://doi.org/10.1142/S2010326319500059">journal</a>]          
+        </span>
+      </p>
+
+      <div id="CKL18" style="display: none">
+      <p class="hanging-indent">
+      <span class="depth-2-indent">
+        Recently Burkhardt et. al. introduced the $k$-checkerboard random matrix
+        ensembles, which have a split limiting behavior of the eigenvalues 
+        (in the limit all but $k$ of the eigenvalues are on the order of $\sqrt{N}$
+        and converge to semi-circular behavior, with the remaining $k$ of size $N$
+        and converging to hollow Gaussian ensembles). We generalize their work to
+        consider non-Hermitian ensembles with complex eigenvalues; instead of a blip new
+        behavior is seen, ranging from multiple satellites to annular rings. 
+        These results are based on moment method techniques adapted to the 
+        complex plane as well as analysis of singular values.
+      </span>
+      </p>
+      </div>
+<!-- -------------------------------------- -->
+      <p class="hanging-indent">
+        <a href="papers/ACF16.pdf"><strong>On Reay's relaxed Tverberg conjecture and generalizations of Conway's thrackle cojecture</strong></a>
+	<br>
+        <span class="depth-1">
+          with <a href="https://gse.rutgers.edu/student/megumi-asada/" class="no-decoration">Megumi Asada</a>, 
+          <a href="https://www.math.cmu.edu/~ffrick/" class="no-decoration">Florian Frick</a>, 
+          Frederick Huang, 
+          <a href="https://www.linkedin.com/in/max-polevy-618ba4127" class="no-decoration">Maxwell Polevy</a>, 
+          <a href="https://www.linkedin.com/in/cynthia-stoner-023931186" class="no-decoration">David Stoner</a>, 
+          Ling Hei Tsang, 
+          and <a href="https://zoewellner.com/" class="no-decoration">Zoe Wellner</a>.
+        </span>
+        <br>
+        <span class="depth-2">
+          <em>The Electronic Journal of Combinatorics</em>, vol. 25 no. 3 (2018), pp. 1&ndash;14.
+        </span>
+        <br>
+	<span class="depth-2">
+          [<a href="javascript:;" onclick="toggleDisplay('ACF16');">abstract</a>]
+          [<a href="https://arxiv.org/abs/1608.04279">arXiv</a> (2016)]
+          [<a href="https://doi.org/10.37236/6516">journal</a>]          
+        </span>
+      </p>
+
+      <div id="ACF16" style="display: none">
+      <p class="hanging-indent">
+      <span class="depth-2-indent">
+        Reay’s relaxed Tverberg conjecture and Conway’s thrackle conjecture are open problems
+        about the geometry of pairwise intersections. Reay asked for the minimum number of points
+        in Euclidean $d$-space that guarantees any such point set admits a partition into r parts,
+        any $k$ of whose convex hulls intersect. Here we give new and improved lower bounds for this number,
+        which Reay conjectured to be independent of $k$. We prove a colored version of Reay’s conjecture
+        for $k$ sufficiently large, but nevertheless $k$ independent of dimension $d$. Requiring convex hulls
+        to intersect pairwise severely restricts combinatorics. This is a higher-dimensional analog of
+        Conway’s thrackle conjecture or its linear special case. We thus study convex-geometric and
+        higher-dimensional analogs of the thrackle conjecture alongside Reay’s problem and conjecture
+        (and prove in two special cases) that the number of convex sets in the plane is bounded by the
+        total number of vertices they involve whenever there exists a transversal set for their pairwise
+        intersections. We thus isolate a geometric property that leads to bounds as in the thrackle conjecture.
+        We also establish tight bounds for the number of facets of higher-dimensional analogs of linear
+        thrackles and conjecture their continuous generalizations.       
+      </span>
+      </p>
+      </div>
+<!-- -------------------------------------- -->
+      <br>
+      <p> 
+        <small>
+          Last updated: February 2024.
+        </small>
+      </p>
+      <p> 
+        <small>
+          <a href="http://accessibility.mit.edu">Accessibility</a>
+        </small>
+      </p>
+    </div>
+    <div class="column left-column">
+    </div>
+  </div>
+
 </body>
+</html>
