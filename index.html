@@ -23,7 +23,6 @@
   });
   </script>
   <script src="js/toggleDisplay.js"></script>
-  <script src="js/lastModified.js"></script>
 </head>
 <body>
   <div class="container">
@@ -57,6 +56,10 @@
           <a href="https://arxiv.org/a/chen_r_2">arXiv ID</a>
           <br>
           Comments welcome!
+          <br>
+          <br>
+          Non-highlighted links such as [abstract] may also be clicked.
+          <br>
         </small>
       </p>
 <!-- -------------------------------------- -->  
@@ -71,6 +74,7 @@
           <small>
             [<a href="javascript:;" class="no-decoration" onclick="toggleDisplay('corank1_ASW_IV');">abstract</a>]
             [<a href="https://arxiv.org/abs/2405.01429" class="no-decoration">arXiv</a> (2024)]
+            [<a href="javascript:;" class="no-decoration" onclick="toggleDisplay('corank1_ASW_AIM_video');">video</a> (2024)]
           </small>
         </span>
       </p>
@@ -96,12 +100,44 @@
       </span>
       </p>
       </div>
+
+      <div id="corank1_ASW_AIM_video" style="display: none">
+      <p class="hanging-indent">
+      <span class="depth-2-indent">
+        This <a href="https://vimeo.com/showcase/10901961/video/902463462">video</a>
+        is a recording of my talk at the workshop 
+        <a href="https://aimath.org/pastworkshops/intersectshimura.html">Arithmetic intersection theory on Shimura varieties</a>
+        at the American Institute of Mathematics (AIM) in January 2024.
+        The talk surveys my four-paper sequence "Co-rank $1$ Arithmetic Siegel&ndash;Weil I&ndash;IV".
+        Some notation from the talk differs slightly from my papers.
+      </span>
+      <br>
+      <br>
+      <span class="depth-2">
+      <em>Talk errata</em>
+      </span>
+      <br>
+      <br>
+      <span class="depth-2-indent">        
+        At 17:00 in the video, I should have only claimed that the expression $\Lambda$ is 
+        given by the formula I wrote on the upper left board when $m = n$. 
+        In general, see Section 6 (or Remark 1.3.2) in 
+        <a href="https://arxiv.org/abs/2405.01429">Co-rank 1 Arithmetic Siegel&ndash;Weil IV</a>.
+      </span>
+      <span class="depth-2-indent">        
+        At 55:00 in the video, I thought I forgot a sign when defining the constant $h^{\mathrm{CM}}_{\widehat{\mathcal{E}}^{\vee}}$
+        at the beginning of the talk, so I added an extra sign at this point in the talk. But I did not actually 
+        forget the extra sign at the beginning, so the sign here is extraneous. See the formulas in 
+        Section 9 of <a href="https://arxiv.org/abs/2405.01429">Co-rank 1 Arithmetic Siegel&ndash;Weil IV</a>.
+      </span>
+      </p>
+      </div>
 <!-- -------------------------------------- -->  
       <p class="hanging-indent">
         <a href="papers/corank1_ASW_III.pdf"><strong>Co-rank 1 Arithmetic Siegel&ndash;Weil III: Geometric local-to-global</strong></a>
         <br>
         <span class="depth-2">
-          <a href="https://arxiv.org/abs/2405.01428">Preprint</a>, pp. 1&ndash;68.
+          <a href="https://arxiv.org/abs/2405.01428">Preprint</a>, pp. 1&ndash;67.
         </span>
         <br>
         <span class="depth-2">
