@@ -44,10 +44,20 @@ img {
   padding-left: 4em; /* Second depth */
 }
 
+.depth-3 {
+  padding-left: 6em; /* Second depth */
+}
+
+.depth-4 {
+  padding-left: 8em; /* Second depth */
+}
+
 .depth-2-indent {
   text-indent: 2em; /* Indent */
   padding-left: 4em; /* Second depth */
 }
+
+
 
 span.yalpsid {
   display:none; 
