@@ -4,7 +4,8 @@ body {
   min-height: 100vh; /* Ensure the body fills the viewport */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
-  /* font-family: Arial, sans-serif; */		
+  /* font-family: Arial, sans-serif; */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
 }
 
 .container {
@@ -13,16 +14,21 @@ body {
   width: 100%; /* Ensure the layout fills the available width */
 }
 
-.column {
+.flex-column {
   flex: 1; /* Make the columns flexible to occupy available space */
   padding: 20px; /* Add some padding to the columns */
 }
 
-.right-column {
+.fixed-width-column{
+  flex: 0 0 800px;
+  padding: 20px; /* Add some padding to the columns */
+}
+
+.right-align-column {
   text-align: right; /* Align content right */
 }
 
-.left-column {
+.left-align-column {
   text-align: left; /* Align content left */
 }
 
